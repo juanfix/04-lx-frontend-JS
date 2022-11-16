@@ -1,0 +1,17 @@
+body {
+  background-color: black;
+  color:beige;
+}
+
+button {
+  margin-right: 10px;
+}
+
+a {
+  margin-right: 5px;
+}
+
+.clear { 
+  clear: both; 
+  height: 60px; 
+}
