@@ -7,6 +7,7 @@ export const PokemonDetailCard = ( props ) => {
      const { 
         id,
         height,
+        moves,
         name,
         sprites,
         stats,
@@ -40,6 +41,7 @@ export const PokemonDetailCard = ( props ) => {
                             <li className="list-group-item list-group-item-dark"> <b>Type: </b> { types && types.map(oneType => <div key={ oneType.slot }>{ oneType.type.name }</div>) } </li>
                             <li className="list-group-item list-group-item-dark"> <b>Abilities: </b> { abilities && abilities.map(oneAbility => <div key={ oneAbility.slot }>{ oneAbility.ability.name }</div>) } </li>
                             <li className="list-group-item list-group-item-dark"> <b>Stats: </b> { stats && stats.map(oneStat => <div key={ oneStat.stat.name }>{ oneStat.stat.name }: { oneStat.base_stat }</div>) } </li>
+                            <li className="list-group-item list-group-item-dark"> <b>Moves: </b> { moves && moves.map(({ move }) => <div key={ move.name }>{ move.name }</div>) } </li>
                             <li className="list-group-item list-group-item-dark"> <b>Height: </b> { height } </li>
                             <li className="list-group-item list-group-item-dark"> <b>Weight: </b> { weight } </li>
                         </ul>
